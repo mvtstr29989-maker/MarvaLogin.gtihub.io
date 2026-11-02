@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="96" viewBox="0 0 420 96" fill="none">
+  <path d="M9 65.5 30 25h34l-8.5 16.3H39l-4.1 8h23.5l-8.2 16.2H26.7L18 82H2l7-16.5Z" fill="#F27B35"/>
+  <path d="M28 52h31l-8.3 14.2H21.2L28 52Z" fill="#fff" fill-opacity=".92"/>
+  <path d="M67 25h17.5L65 67H47.8L67 25Z" fill="#fff"/>
+  <path d="M66 70h10.5l-6.2 12H59.8l6.2-12Z" fill="#F27B35"/>
+  <text x="101" y="53" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700" letter-spacing="3">MARVA</text>
+  <text x="103" y="75" fill="#C5CDD4" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" letter-spacing="3.2">TRANSPORTES</text>
+  <path d="M290 68h113" stroke="#F27B35" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101a24">
+    <meta
+      name="description"
+      content="Acceso al sistema de rastreo de unidades de Transportes MARVA."
+    >
+    <title>Rastreo de Unidades | Transportes MARVA</title>
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="hero" id="inicio">
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        aria-hidden="true"
+        poster=""
+      >
+        <source src="assets/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <header class="navbar">
+        <a class="navbar__brand" href="#inicio" aria-label="Transportes MARVA, inicio">
+          <img style="width: 90px; height: auto;" src="assets/Marva.png" alt="Transportes MARVA">
+        </a>
+        <a class="navbar__home" href="#inicio">Inicio</a>
+      </header>
+
+      <section class="login-card" aria-labelledby="login-title">
+        <div class="login-card__eyebrow">
+          <span class="login-card__dot" aria-hidden="true"></span>
+          PORTAL DE ACCESO
+        </div>
+        <h1 id="login-title">TRANSPORTES MARVA S.A. DE C.V.</h1>
+        <p class="login-card__subtitle">Rastreo de Unidades</p>
+
+        <div class="login-card__divider" aria-hidden="true"></div>
+
+        <form class="login-form" id="login-form">
+          <label class="field">
+            <span class="field__label">Usuario</span>
+            <span class="field__control">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="3.5"></circle>
+                <path d="M5 20c.5-3.5 3.2-5.5 7-5.5s6.5 2 7 5.5"></path>
+              </svg>
+              <input
+                type="text"
+                name="usuario"
+                placeholder="Ingresa tu usuario"
+                autocomplete="username"
+                required
+              >
+            </span>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Contraseña</span>
+            <span class="field__control">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="10" width="14" height="10" rx="2"></rect>
+                <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+              </svg>
+              <input
+                type="password"
+                name="contrasena"
+                placeholder="Ingresa tu contraseña"
+                autocomplete="current-password"
+                required
+              >
+            </span>
+          </label>
+
+          <button class="login-form__submit" type="submit">
+            Acceder
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h13m-5-5 5 5-5 5"></path>
+            </svg>
+          </button>
+          <p class="login-form__message" id="login-message" role="status" hidden>
+            El acceso requiere una conexión con el servicio de autenticación.
+          </p>
+        </form>
+
+        <p class="login-card__footer">TRANSPORTES MARVA <span>·</span> RASTREO EN TIEMPO REAL</p>
+      </section>
+
+      <p class="hero__caption"><span></span> CONECTANDO RUTAS, MOVIENDO EL FUTURO</p>
+    </main>
+    <script>
+      document.getElementById("login-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        document.getElementById("login-message").hidden = false;
+      });
+    </script>
+  </body>
+</html>
